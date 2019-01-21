@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Minitienda</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_products_available">No hay productos</string>
+    <string name="action_buy">Comprar</string>
+    <string name="exception_connect_message">No tienes conexión por favor verifica</string>
+    <string name="wtf_exception">Un error inesperado ha ocurrido</string>
+    <string name="warning">Advertencia</string>
+    <string name="accept">Aceptar</string>
+    <string name="action_refresh">Actualizar</string>
+    <string name="salesTitle">Compras</string>
+    <string name="productsTitle">Productos</string>
+    <string name="conection_error">No tienes conexión a internet por favor revisa tu dispositivo</string>
+    <string name="no_permissions">No tienes acceso a la aplicación de TPaga comunícate con soporte</string>
+    <string name="no_products">No hay productos creados</string>
+    <string name="sale_already_exist">La venta ya se encuentra registrada en TPaga por favor consulta el listado de
+        ventas
+    </string>
+    <string name="data_sent_error">Se presentó un error en el envío de los datos del producto</string>
+    <string name="creating_sale">Creando venta</string>
+    <string name="sending_data">Enviando información</string>
+    <string name="loading_purchases">Cargando compras</string>
+    <string name="not_found_shopping">No hay compras registradas</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:dist="http://schemas.android.com/apk/distribution"
+          package="com.tpaga.minitienda">
+
+    <dist:module dist:instant="true"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:name=".MinitiendaApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/minitienda"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/minitienda"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+            android:name=".salelist.SaleListActivity"
+            android:label="@string/salesTitle"
+            android:screenOrientation="portrait">
+                <intent-filter android:label="Listado Compras">
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data android:scheme="https"
+                          android:host="www.minitienda.com"
+                          android:pathPrefix="/compras" />
+                </intent-filter>
+                <intent-filter android:label="Listado Compras">
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data android:scheme="minitienda"
+                          android:host="compras" />
+                </intent-filter>
+        </activity>
+        <activity
+                android:name=".productlist.ProductListActivity"
+                android:screenOrientation="portrait"
+                android:label="@string/productsTitle" >
+        </activity>
+        <activity
+                android:name=".splash.SplashActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
